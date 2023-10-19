@@ -1,0 +1,336 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #FAF6EE;
+  background-position: center;
+}
+
+/* styling af navbar og menupunkter i navbar */
+
+.menubar {
+  text-align: center;
+  background-color:#C0AD9F;
+}
+
+.menubar ul {
+  display:inline-flex;
+}
+
+.menubar ul li {
+  width: 220px;
+  margin-top: 40px;
+  padding: 15px;  
+  list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color:#57453E;
+}
+
+.submenu {
+  display: none;
+}
+
+.menubar ul li:hover .submenu {
+  display: block;
+  position:absolute;
+  background-color: #C0AD9F;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menubar ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menubar ul li:hover .submenu ul li {
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: left;
+  background: transparent;
+}
+
+.menubar ul li:hover .submenu ul li a:hover {
+  opacity: 1;
+}
+
+/* Styling af logo i navbar */
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin: -40px 40px 0 10px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* styling af indhold */
+
+h1 {
+    color: #23398C;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 100px 200px 0 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h2 {
+    color: #23398C;
+    font-size: 33px;
+    font-weight: lighter;
+    margin: 40px 200px 20px;
+
+}
+
+/* Styling af tre  billeder øverst på forside */
+
+.billed-container {
+    display: flex; /* Gør billederne til flex-elementer */
+}
+
+.billed-container img {
+    margin-top: 80px;
+    margin-bottom: 15px;
+    width: 327px; /* Angiv bredden på dit logo */
+    height: auto; /* Behold højden i forhold til bredden */
+}
+ .billede1 {
+    margin-left: 200px;
+ }
+
+ .billede1:hover {
+    transform: scale(1.06); 
+ }
+
+ .billede2 {
+    margin-left: 20px;
+ }
+
+ .billede2:hover {
+    transform: scale(1.06);
+ }
+
+ .billede3 {
+    margin-left: 20px;
+    margin-right: 100px;
+ }
+
+ .billede3:hover {
+    transform: scale(1.06);
+ }
+
+ /* Styling af tilhørende tekst øverst på forside */
+
+.tekst-container span {
+    font-size: 20px;
+    color: #23398C;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tekst1 {
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.tekst2 {
+    margin-left: 75px;
+    text-decoration: none;
+}
+
+.tekst3 {
+    margin-left: 52px;
+    text-decoration: none;
+}
+
+.tekst4 {
+    margin-left: 68px ;
+    text-decoration: none;
+}
+
+/* Styling af "LIDT OM HÆKLEHJØRNET" tekstboks */
+
+.tekst-container2 {
+    color: #23398C;
+    display: flex;
+}
+
+.lidtom {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 42px 10px 20px 200px;
+}
+
+.brødtekst {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 20px 200px 20px 140px ;
+    text-align: justify;
+    
+}
+
+/* Styling af boks med nyhedsbrev */
+
+.nyhedsbrev-boks {
+    text-align: center;
+    background-color: #FAF6EE;
+    border: #736357 solid 2px;
+    padding: 20px;
+    margin: 80px 200px;
+}
+
+.nyhedsbrev-boks h2 {
+    color: #736357;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+.nyhedsbrev-boks input[type="email"] {
+    width: 300px;
+    padding: 15px;
+    margin: 10px 15px 40px;
+    background-color: #FBFCF8;
+    text-align: center;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #736357;
+    border: #736357 solid 1px;
+
+}
+
+.nyhedsbrev-boks input[type="submit"] {
+    background-color: #C0AD9F;
+    color: white;
+    padding: 15px 50px;
+    border: #736357 solid 1px;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.nyhedsbrev-boks input[type="submit"]:hover {
+    background-color: #736357;
+}
+
+/* Styling af fire billeder nederst på forsiden */
+
+.billed-container4 {
+    display: flex; /* Gør billederne til flex-elementer */
+}
+
+.billed-container4 img {
+    width: 241px; 
+    height: auto; 
+    margin-bottom: 20px;
+}
+
+.billede4 {
+margin-left: 200px;
+opacity: 0.8;
+}
+
+.billede4:hover {
+opacity: 1;
+}
+
+.billede5 {
+margin-left: 20px;
+}
+
+.billede6 {
+margin-left: 20px;
+}
+
+.billede7 {
+margin-left: 20px;
+}
+
+/* Styling af linjer mellem tekst og billeder på siden */
+
+hr {
+    border: #23398C solid 1px;
+    margin: 20px 200px;
+}
+
+.hrbrun {
+    border: #736357 solid 1px;
+    margin: 20px 200px;
+}
+
+/* Styling af footer */
+
+.footer {
+    background-color: #C0AD9F;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Styling af sociale medier */
+  .footer, .socials {
+    padding: 5px;
+    color: #57453E;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .socials a {
+      font-size: 19px;
+      color: inherit;
+      line-height: 38px;
+      display: inline-block;
+      border-radius: 50%;
+      margin: 0 20px;
+      opacity: 0.8; 
+  }
+  
+  /* Styling af ikonerne, når musen bevæger over */
+  .socials a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    
+  }
+  
+  /* Styling af ul */
+  .footer ul {
+    margin: 15px 20px;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  .footer ul li a {
+    color: #57453E;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  /* Styling af "Kontakt", når musen bevæger over */
+  .footer ul li a:hover {
+    opacity: 1;
+  }
+  
+  .info {
+    display: inline;
+  }
+
